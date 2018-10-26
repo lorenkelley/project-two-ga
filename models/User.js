@@ -1,5 +1,5 @@
 //  require mongoose
-const mongoose = require('../db/connections')
+const mongoose = require('../db/connection')
 // declare Schema
 const Schema = mongoose.Schema
 
