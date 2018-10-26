@@ -1,7 +1,7 @@
 // 'boilerplate' for application controller
 const applicationController ={
     index: (req, res) => {
-        res.send('Hey whats up this is app index')
+        res.send(' app index')
     }
 }
 
@@ -9,5 +9,5 @@ const applicationController ={
 
 
 
-// export this file to the rest of the application
+// export this file to the rest of the folders
 module.exports = applicationController
