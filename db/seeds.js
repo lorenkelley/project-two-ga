@@ -86,5 +86,5 @@ const eyeThree = new Product({
 //--------------------------------------
 // USER
 const userOne = new User({
-    
+
 })
