@@ -7,7 +7,14 @@ const Schema = mongoose.Schema
 const User = new Schema({
     name: String,
     email: String,
-    skintone: Number
+    skintone: Number,
+    list: [
+        //  reference 
+        {
+            type: Schema.Types.ObjectId,
+            ref: 'list'
+        }
+    ]
 })
 
 // 
