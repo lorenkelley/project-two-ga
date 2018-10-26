@@ -1,7 +1,7 @@
 // 'boilerplate' for application controller
 const applicationController ={
     index: (req, res) => {
-        res.send(' app index')
+        res.render('index')
     }
 }
 

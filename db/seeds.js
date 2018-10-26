@@ -85,6 +85,23 @@ const eyeThree = new Product({
 })
 //--------------------------------------
 // USER
-const userOne = new User({
+const userOne = new User ({
+    name: "Tia",
+    email: "janedoe@gmail.com",
+    skintone: 5650,
+    list: [ Never Say Never , 24.50]
+})
 
+const userTwo = new User ({
+    name: "Tia",
+    email: "janedoe@gmail.com",
+    skintone: 5650,
+    list: [ Never Say Never , 24.50]
+})
+
+const userThree = new User ({
+    name: "Tia",
+    email: "janedoe@gmail.com",
+    skintone: 5650,
+    list: [ Never Say Never , 24.50]
 })
