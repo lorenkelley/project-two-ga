@@ -4,14 +4,14 @@ const router =  express.Router()
 const applicationController = require('../controllers/application')
 // const listController = require('../controllers/list')
 // const productsController = require('../controllers/products')
-// const userController = require('../controllers/user')
+const userController = require('../controllers/user')
 
 
 // GET home page
 router.get('/', applicationController.index)
 
-
-// go into the 
+// go into the users profile
+router.get('/', userController.index)
 
 
 
