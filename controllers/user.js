@@ -2,7 +2,8 @@
 const userController ={
     // display the user profile
     index: (req, res) => {
-        res.send(' user index')
+        //you shouldn't need /user because it's already defined in your index.js
+        res.render('/user')
     }
     
 
