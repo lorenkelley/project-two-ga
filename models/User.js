@@ -1,5 +1,5 @@
 //  require mongoose
-const mongoose = require('../db/connection')
+const mongoose = require('../db/connections')
 // declare Schema
 const Schema = mongoose.Schema
 
@@ -12,7 +12,7 @@ const User = new Schema({
         //  reference 
         {
             type: Schema.Types.ObjectId,
-            ref: 'list'
+            ref: 'List'
         }
     ]
 })

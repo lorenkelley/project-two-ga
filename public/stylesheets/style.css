@@ -1,10 +1,15 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background: blue;
+  background: white;
 }
 
 a {
   color: #00B7FF;
 }
-
+.containerHome{
+  border: solid;
+  background-color: #8A4D43;
+  height: 100px;
+  width: 100px;
+}
