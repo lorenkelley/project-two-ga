@@ -9,8 +9,8 @@ const User = new Schema({
     email: String,
     skintone: Number,
     list: [
-        //  reference 
         {
+            // reference
             type: Schema.Types.ObjectId,
             ref: 'List'
         }
