@@ -23,10 +23,16 @@ listController = {
             })
         })
     },
-    
-
-
-
+    update:(req,res)=>{
+        List.findByIdAndUpdate(req.params.id, req.body).then((updatedList)=>{
+            res.redirect('/${updatedList._id}')
+        })
+    },
+    delete:(req,res) =>{
+        List.findByIdAndRemove(req.params.id).then(()=>{
+            res.redirect('/user')
+        })
+    }
 }
 
 

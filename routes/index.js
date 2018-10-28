@@ -3,7 +3,7 @@ const express = require('express')
 const router =  express.Router()
 const applicationController = require('../controllers/application')
 const listController = require('../controllers/list')
-// const productsController = require('../controllers/products')
+const productController = require('../controllers/product')
 const userController = require('../controllers/user')
 
 
@@ -26,6 +26,10 @@ router.get('/list/:listId', listController.show)
 router.put('/list/listId', listController.update)
 // delete one list
 router.delete('/list/:listId', listController.delete)
+// ---------------------------------
+//  PRODUCT
+//  display all products
+router.get('/product', productController.index)
 
 
 
