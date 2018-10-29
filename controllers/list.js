@@ -11,7 +11,7 @@ listController = {
 
     index: (req, res) => {
         List.find().then((list)=>{
-            res.render('list/index', {
+            res.render('list', {
              list: list   
             })
         })

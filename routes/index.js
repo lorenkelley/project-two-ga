@@ -19,15 +19,15 @@ router.get('/users/:userId', userController.show)
 // ---------------------------
 // LIST
 // // create a new list
-// router.post('/user/:userId/list', listController.create)
+router.post('/user/:userId/list', listController.create)
 // //display all lists
-// router.get('/user/:userId/list', listController.index)
+router.get('/user/:userId/list', listController.index)
 // // display one list
-// router.get('/user/:userId/list/:listId', listController.show)
+router.get('/user/:userId/list/:listId', listController.show)
 // // update a list for specfic user
-// router.put('/user/:userId/list/listId', listController.update)
+router.put('/user/:userId/list/listId', listController.update)
 // // delete one list for specfic user
-// router.delete('/list/:listId', listController.delete)
+router.delete('/list/:listId', listController.delete)
 // // ---------------------------------
 // //  PRODUCT
 // //  display all products
