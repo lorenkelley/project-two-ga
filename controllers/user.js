@@ -6,12 +6,20 @@ const User = require('../models/User')
 userController = {
 
     index: (req, res) => {
+        
         User.find().then((user) => {
             
             res.render('users',{
                 user: user
             })
          })
+    },
+    show: (req,res) => {
+        const userId = req.params.userId
+        User.findById(userId).populate('(user')
+        .then((user) =>{
+            res.render('users/show', {user:user})
+        })
     }
 }
 
