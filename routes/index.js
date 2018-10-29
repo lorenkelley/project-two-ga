@@ -14,12 +14,15 @@ router.get('/', applicationController.index)
 // display the users home 
 router.get('/users', userController.index)
 // this is basically the same as the homepage route but the /user is added to corelate to the user controller
-// show  form for new user to fill out
-router.get('/user/new', userController.new)
-// create new user
-router.get('/user', userController.create)
+// // create new user
+router.get('/users/new', userController.new)
+router.post('/users', userController.create)
 // display specfic user profile
 router.get('/users/:userId', userController.show)
+// // update a list for a specfic user
+router.put('/users/:userId', userController.update)
+//  delete one list for specfic user
+router.delete('/users/:userId', userController.delete)
 // ---------------------------
 // LIST
 //  create a new list
@@ -28,12 +31,11 @@ router.post('/users/:userId/list', listController.create)
 router.get('/users/:userId/list', listController.index)
 //  display one list
 router.get('/users/:userId/list/:listId', listController.show)
-// shows edit form for one list
-router.get('/users/:userId/list/:listId/edit')
-// // update a list for a specfic user
-router.put('/users/:userId/list/listId', listController.update)
-//  delete one list for specfic user
-router.delete('/list/:listId', listController.delete)
+
+// // // update a list for a specfic user
+// router.put('/users/:userId/list/listId', listController.update)
+// //  delete one list for specfic user
+// router.delete('/list/:listId', listController.delete)
 // ---------------------------------
 //  PRODUCT
 //  display all products
