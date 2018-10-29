@@ -6,14 +6,12 @@ const User = require('../models/User')
 userController = {
 
     index: (req, res) => {
-        // display the users profile and display their list
-        User.findById({}).populate('list')
-            .then((users) => {
-                res.render('users/index', {
-                    users: users
-
-                })
+        User.find().then((user) => {
+            
+            res.render('users',{
+                user: user
             })
+         })
     }
 }
 
