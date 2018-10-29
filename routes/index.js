@@ -6,25 +6,27 @@ const listController = require('../controllers/list')
 const productController = require('../controllers/product')
 const userController = require('../controllers/user')
 
-
-// HOME 
+// HOME
+// display home page
 router.get('/', applicationController.index)
 // --------------------------
 // USER
-// go into the users profile
+// display the users home 
 router.get('/user', userController.index)
 // this is basically the same as the homepage route but the /user is added to corelate to the user controller
+// display specfic user profile
+router.get('/user/:userId', userController.show)
 // ---------------------------
 // LIST
 // create a new list
-router.post('/list', listController.create)
+router.post('/user/:userId/list', listController.create)
 //display all lists
-router.get('/list', listController.index)
+router.get('/user/:userId/list', listController.index)
 // display one list
-router.get('/list/:listId', listController.show)
-// update a list
-router.put('/list/listId', listController.update)
-// delete one list
+router.get('/user/:userId/list/:listId', listController.show)
+// update a list for specfic user
+router.put('/user/:userId/list/listId', listController.update)
+// delete one list for specfic user
 router.delete('/list/:listId', listController.delete)
 // ---------------------------------
 //  PRODUCT
