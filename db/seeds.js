@@ -76,7 +76,7 @@ const eyeTwo = new Product({
 
 })
 const eyeThree = new Product({
-    name: 'Never Say Never',
+    name: 'abc',
     brand: 'MAC',
     image: 'https://www.maccosmetics.com/media/export/cms/products/280x320/mac_sku_S5T38E_280x320_0.jpg' ,
     type: 'Blush + Bronzer',
@@ -87,54 +87,44 @@ const eyeThree = new Product({
 // LIST
 const eyeList = new List({
     title: 'Eyes',
-    name: 'Bright Response',
-    price: 20.50
+    name: ['Bright Response', 'abc'],
+    price: [24.50, 24.50 ]
     
 })
 const cheekList = new List({
     title: 'Cheeks',
-    name: 'Fever',
-    price: 18.50
+    name: ['Fever','Never Say Never'],
+    price: [18.50, 18.50]
     
 })
 const lipList = new List({
     title: 'Lips',
-    name: 'Burning Love',
-    price: 18.50
+    name: ['Burning Love',],
+    price: [18.50, 18.50]
     
 })
 // USER
 const userOne = new User ({
-    name: "Tia",
+    name: "Shia",
     email: "janedoe@gmail.com",
     skintone: 5650,
     list: [eyeList, cheekList, lipList]
 })
 
 const userTwo = new User ({
-    name: "Tia",
-    email: "janedoe@gmail.com",
-    skintone: 5650,
-    list: [cheekList]
+    name: "Erin",
+    email: "doe@gmail.com",
+    skintone: 3250,
+    list: [cheekList, lipList]
 })
 
 const userThree = new User ({
-    name: "Tia",
+    name: "Ashanti",
     email: "janedoe@gmail.com",
-    skintone: 5650,
+    skintone: 4750,
     list: [lipList]
 })
 
-
-// User.remove({}).then(() => List.insertMany([eyeList, cheekList, lipList]).then(() => List.remove({})).then(() => Product.insertMany([lipstickOne,lipstickTwo, lipstickthree, highlighterOne , highlighterTwo, highlighterThree, eyeOne, eyeTwo, eyeThree]))
-//                                         //your list variables go here]    
-// .then(() =>  List.save())
-// .then(() => userOne.save())
-// .then(() => userTwo.save())
-// .then(() => userThree.save())
-//    .then(() => console.log("Database seeded success"))
-//    // to close out seed.js
-//    .then(() => mongoose.connection.close(())
 
 User.remove({})
 .then(()=> List.remove({}))

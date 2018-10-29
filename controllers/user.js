@@ -1,6 +1,6 @@
 // 'boilerplate' for user controller
 const User = require('../models/User')
-const List = require('../models/List')
+ const List = require('../models/List')
 
 
 userController = {
@@ -9,7 +9,7 @@ userController = {
         // display the users profile and display their list
         User.findById({}).populate('list')
             .then((users) => {
-                res.render('.users/index', {
+                res.render('users/index', {
                     users: users
 
                 })
