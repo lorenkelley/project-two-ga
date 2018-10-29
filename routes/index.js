@@ -1,6 +1,6 @@
 // bring in express
 const express = require('express')
-const router =  express.Router()
+const router = express.Router()
 const applicationController = require('../controllers/application')
 const listController = require('../controllers/list')
 const productController = require('../controllers/product')
@@ -31,11 +31,10 @@ router.post('/users/:userId/list', listController.create)
 router.get('/users/:userId/list', listController.index)
 //  display one list
 router.get('/users/:userId/list/:listId', listController.show)
-
-// // // update a list for a specfic user
-// router.put('/users/:userId/list/listId', listController.update)
-// //  delete one list for specfic user
-// router.delete('/list/:listId', listController.delete)
+//  update a list for a specfic user
+router.put('/users/:userId/list/listId', listController.update)
+//  delete one list for specfic user
+router.delete('/list/:listId', listController.delete)
 // ---------------------------------
 //  PRODUCT
 //  display all products

@@ -27,7 +27,7 @@ listController = {
     },
     update:(req,res)=>{
         List.findByIdAndUpdate(req.params.id, req.body).then((updatedList)=>{
-            res.redirect('/${updatedList._id}')
+            res.redirect('/${req.params.id}}')
         })
     },
     delete:(req,res) =>{

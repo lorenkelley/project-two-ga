@@ -4,6 +4,10 @@
     user profile
 
 </div>
-<form action="/users{{users._id}}?_method=DELETE" method="">
+<form action="/users{{users._id}}?_method=PATCH" method="">
+<button type="submit"> UPDATE </button>
+</form>
+
+<form action="/{{users._id}}?_method=DELETE" method="">
 <button type="submit"> DELETE </button>
 </form>
