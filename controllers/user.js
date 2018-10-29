@@ -6,19 +6,19 @@ const User = require('../models/User')
 userController = {
 
     index: (req, res) => {
-        
+
         User.find().then((user) => {
-            
-            res.render('users',{
+            res.render('users/index', {
                 user: user
             })
          })
     },
     show: (req,res) => {
         const userId = req.params.userId
-        User.findById(userId).populate('(user')
+        User.findById(userId).populate('user')
         .then((user) =>{
-            res.render('users/show', {user:user})
+            console.log(user)
+            res.render('users/show', {user: user})
         })
     }
 }

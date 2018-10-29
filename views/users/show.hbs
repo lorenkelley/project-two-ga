@@ -2,5 +2,8 @@
 <p>Welcome to {{title}}</p>
 <div class="container">
     user profile
-
+     {{#each user}}
+        <div>{{name}}</div>
+        <div>{{email}}</div>        
+    {{/each}}
 </div>

@@ -8,4 +8,4 @@ const List = new Schema({
     
 })
 
-module.exports = mongoose.model('List',List)
+module.exports = mongoose.model('List', List)

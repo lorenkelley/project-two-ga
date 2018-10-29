@@ -1,5 +1,5 @@
 const List = require('../models/List')
-
+const User = require('../models/User')
 // create new list
 listController = {
 
@@ -10,9 +10,11 @@ listController = {
     },
 
     index: (req, res) => {
-        List.find().then((list)=>{
-            res.render('list', {
-             list: list   
+        const userId = req.params.userId
+        User.findById(userId).populate('list')
+        .then((list) => {
+            res.render('list/index', {
+                list: list
             })
         })
     },
