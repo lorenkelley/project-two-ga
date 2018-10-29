@@ -108,30 +108,43 @@ const userOne = new User ({
     name: "Tia",
     email: "janedoe@gmail.com",
     skintone: 5650,
-    list: [ 24.50]
+    list: [eyeList, cheekList, lipList]
 })
 
 const userTwo = new User ({
     name: "Tia",
     email: "janedoe@gmail.com",
     skintone: 5650,
-    list: [ 24.50]
+    list: [cheekList]
 })
 
 const userThree = new User ({
     name: "Tia",
     email: "janedoe@gmail.com",
     skintone: 5650,
-    list: [ 24.50]
+    list: [lipList]
 })
 
 
-User.remove({}).then(() => List.insertMany([eyeList, cheekList, lipList]).then(() => List.remove({})).then(() => Product.insertMany([lipstickOne,lipstickTwo, lipstickthree, highlighterOne , highlighterTwo, highlighterThree, eyeOne, eyeTwo, eyeThree]))
-                                        //your list variables go here]    
-.then(() =>  List.save())
+// User.remove({}).then(() => List.insertMany([eyeList, cheekList, lipList]).then(() => List.remove({})).then(() => Product.insertMany([lipstickOne,lipstickTwo, lipstickthree, highlighterOne , highlighterTwo, highlighterThree, eyeOne, eyeTwo, eyeThree]))
+//                                         //your list variables go here]    
+// .then(() =>  List.save())
+// .then(() => userOne.save())
+// .then(() => userTwo.save())
+// .then(() => userThree.save())
+//    .then(() => console.log("Database seeded success"))
+//    // to close out seed.js
+//    .then(() => mongoose.connection.close(())
+
+User.remove({})
+.then(()=> List.remove({}))
+.then(()=> Product.remove({}))
+.then(() => Product.insertMany([lipstickOne,lipstickTwo, lipstickthree, highlighterOne , highlighterTwo, highlighterThree, eyeOne, eyeTwo, eyeThree]))
+.then(() => List.insertMany([eyeList, cheekList, lipList]))
+.then(() => userOne.save())
 .then(() => userOne.save())
 .then(() => userTwo.save())
 .then(() => userThree.save())
-   .then(() => console.log("Database seeded success"))
-   // to close out seed.js
-   .then(() => mongoose.connection.close(())
+
+.then(() => console.log("Database seeded success"))
+.then(() => mongoose.connection.close())

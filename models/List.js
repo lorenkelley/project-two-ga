@@ -3,8 +3,8 @@ const Schema = mongoose.Schema
 
 const List = new Schema({
     title: String,
-    name: String,
-    price: Number
+    name: [String],
+    price: [Number]
     
 })
 
