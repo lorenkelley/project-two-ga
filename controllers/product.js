@@ -4,7 +4,7 @@ const productController = {
 
     index: (req, res) => {
         Product.find().then((product)=>{
-            res.render('products/index', {
+            res.render('products', {
              product: product   
             })
         })

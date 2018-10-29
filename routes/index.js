@@ -14,24 +14,30 @@ router.get('/', applicationController.index)
 // display the users home 
 router.get('/users', userController.index)
 // this is basically the same as the homepage route but the /user is added to corelate to the user controller
+// show  form for new user to fill out
+router.get('/user/new', userController.new)
+// create new user
+router.get('/user', userController.create)
 // display specfic user profile
 router.get('/users/:userId', userController.show)
 // ---------------------------
 // LIST
-// // create a new list
+//  create a new list
 router.post('/users/:userId/list', listController.create)
-// //display all lists
+// display all lists
 router.get('/users/:userId/list', listController.index)
-// // display one list
+//  display one list
 router.get('/users/:userId/list/:listId', listController.show)
-// // update a list for specfic user
+// shows edit form for one list
+router.get('/users/:userId/list/:listId/edit')
+// // update a list for a specfic user
 router.put('/users/:userId/list/listId', listController.update)
-// // delete one list for specfic user
+//  delete one list for specfic user
 router.delete('/list/:listId', listController.delete)
-// // ---------------------------------
-// //  PRODUCT
-// //  display all products
-router.get('/product', productController.index)
+// ---------------------------------
+//  PRODUCT
+//  display all products
+router.get('/products', productController.index)
 
 
 
