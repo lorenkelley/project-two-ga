@@ -15,7 +15,7 @@ router.get('/', applicationController.index)
 router.get('/user', userController.index)
 // this is basically the same as the homepage route but the /user is added to corelate to the user controller
 // display specfic user profile
-router.get('/user/:userId', userController.show)
+// router.get('/user/:userId', userController.show)
 // ---------------------------
 // LIST
 // create a new list
