@@ -3,13 +3,20 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background: white;
 }
-.navbar-brand{
-}
+
+.navbar-brand
+    {
+      padding-left:70px;
+      padding-right:100px;
+      
+      font-size: x-small;
+    }
 .navigation{
-  color: #D26856;
+ color: #D26856;
 }
-.navbar-brand{
-  margin-left: 3%;
+a {
+  color: #D26856;
+  text-decoration: none;
 }
 
 #homePage{
@@ -20,7 +27,9 @@ body {
   margin-top: -50px;
   height: 42rem;
   background-image: url("/images/greenbackground.jpg");
-  /* background-color: #8A4D43; */
+
+  /* image from https://www.pinterest.com/pin/795307615423069170/  */
+
 }
 #homePageTitle{
   margin-top: 10%;
@@ -29,7 +38,7 @@ body {
   font-stretch: narrower;
   animation: fadeInRight 5s; 
 }
-
+/* Allows title to fade in */
 /* https://daneden.github.io/animate.css/ */
 @keyframes fadeInRight {
   from {
@@ -44,19 +53,16 @@ body {
     transform: translate3d(0, 0, 0);
   }
 }
-
 .fadeInRight {
   -webkit-animation-name: fadeInRight;
   animation-name: fadeInRight;
 }
-
 @-webkit-keyframes fadeInRightBig {
   from {
     opacity: 0;
     -webkit-transform: translate3d(2000px, 0, 0);
     transform: translate3d(2000px, 0, 0);
   }
-
   to {
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
