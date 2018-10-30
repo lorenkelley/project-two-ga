@@ -34,6 +34,11 @@ userController = {
                 })
             })
     },
+    edit:(req, res) => {
+        User.findById(req.params.id).then((users) => {
+            res.render('users/edit')
+        })
+    },
     // update a users account 
     update: (req, res) => {
         List.findByIdAndUpdate(req.params.id, req.body).then((updatedList) => {

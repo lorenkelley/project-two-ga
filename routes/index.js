@@ -10,6 +10,8 @@ const userController = require('../controllers/user')
 // display home page
 router.get('/', applicationController.index)
 // --------------------------
+router.get('/gallery', applicationController.show)
+
 // USER
 // display the users home 
 router.get('/users', userController.index)
@@ -19,6 +21,8 @@ router.get('/users/new', userController.new)
 router.post('/users', userController.create)
 // display specfic user profile
 router.get('/users/:userId', userController.show)
+// edit user this is where update lives
+router.get('/users/:userId/edit', userController.edit)
 // // update a list for a specfic user
 router.put('/users/:userId', userController.update)
 //  delete one list for specfic user
