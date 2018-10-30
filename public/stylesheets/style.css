@@ -24,6 +24,7 @@ a {
 .navigation{
   color: rgb(225, 170, 207);
 }
+
 a {
   color: rgb(242, 197, 188);
   text-decoration: none;
@@ -43,9 +44,9 @@ a {
 }
 #homePageTitle{
   font-family: 'Raleway', sans-serif;
-  margin-top: 10%;
+  margin-top: 15%;
   color: white;
-  font-size: 22rem;
+  font-size: 20rem;
   font-stretch: narrower;
   animation: fadeInRight 5s; 
 }
@@ -80,6 +81,13 @@ a {
     transform: translate3d(0, 0, 0);
   }
 }
+/* #secondTitle{
+  font-family: 'Raleway', sans-serif;
+  margin-left: -60rem;
+  color: white;
+  font-size: 10rem;
+} */
+
 /* -------------------------------- */
 /* PRODUCT */
 .card-title{
@@ -124,13 +132,13 @@ a {
   
 }
 .containerGallery{
-  background-image: url("/images/greenbackground.jpg");
+  /* background-image: url("/images/greenbackground.jpg"); */
 }
 #lightbox{
-  border: double 4px white ;
+  border: double 4px rgb(208, 114, 32) ;
   padding: 10px 5px;
   margin-top: 10px;
-  margin-left: 20px;
+  margin-left: 12rem;
   
 }
 
@@ -140,4 +148,14 @@ a {
   padding: 30px 50px;
   
 }
-
+#lightbox1{
+  margin-left: 12rem;
+  border: double 4px rgb(208, 114, 32) ;
+  padding: 10px 5px;
+}
+#lightbox2{
+  margin-left: 8rem;
+  border: double 4px rgb(208, 114, 32) ;
+  padding: 10px 5px;
+  margin-top: 10px;
+}
