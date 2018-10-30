@@ -3,12 +3,15 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background: white;
 }
-.navbar{
-  color: pink;
+.navbar-brand{
+}
+.navigation{
+  color: #D26856;
 }
 .navbar-brand{
-  color: pink;
+  margin-left: 3%;
 }
+
 #homePage{
   border: none;
   display: grid;
@@ -16,7 +19,8 @@ body {
   grid-template-rows: 1fr 1fr 1fr 1fr;
   margin-top: -50px;
   height: 42rem;
-  background-color: #8A4D43;
+  background-image: url("/images/greenbackground.jpg");
+  /* background-color: #8A4D43; */
 }
 #homePageTitle{
   margin-top: 10%;
