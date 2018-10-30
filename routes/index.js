@@ -39,6 +39,10 @@ router.delete('/list/:listId', listController.delete)
 //  PRODUCT
 //  display all products
 router.get('/products', productController.index)
+// // update a list for a specfic user
+router.put('/products/:productsId', productController.update)
+//  delete one list for specfic user
+router.delete('/products/:productsId', productController.delete)
 
 
 

@@ -16,8 +16,8 @@ const productController = {
             })
         },
         // delete products
-        Product: (req, res) => {
-            User.findByIdAndRemove(req.params.id).then(() => {
+        delete: (req, res) => {
+            Product.findByIdAndRemove(req.params.id).then(() => {
                 res.redirect('/products')
             })
         }
