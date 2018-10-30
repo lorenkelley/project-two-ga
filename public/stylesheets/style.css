@@ -22,7 +22,7 @@ a {
       font-size: small;
     }
 .navigation{
-  color: rgb(242, 197, 188);
+  color: rgb(225, 170, 207);
 }
 a {
   color: rgb(242, 197, 188);
@@ -119,3 +119,25 @@ a {
   font-family: 'Raleway', sans-serif;
   color: white
 }
+/* GALLERY */
+#galleryBody{
+  
+}
+.containerGallery{
+  background-image: url("/images/greenbackground.jpg");
+}
+#lightbox{
+  border: double 4px white ;
+  padding: 10px 5px;
+  margin-top: 10px;
+  margin-left: 20px;
+  
+}
+
+#container{
+  color: #35373a;
+  min-height: 100vh;
+  padding: 30px 50px;
+  
+}
+

@@ -1,16 +1,14 @@
 /* GALLERY */
 body {
-    background-color: #434c50;
-    min-height: 100vh;
-    font: normal 16px sans-serif;
-    padding: 40px 0;
+    background-image: url("/images/greenbackground.jpg");
+
   }
-  
-  .container.gallery-container {
-    background-color: #fff;
+/*   
+  #container{
     color: #35373a;
     min-height: 100vh;
     padding: 30px 50px;
+    
   }
   
   .gallery-container h1 {
@@ -84,8 +82,5 @@ body {
     body {
         padding: 0;
     }
-  }
-#shia1{
-    height: 20px;
-    width: 20px;
-}
+  } */
+
