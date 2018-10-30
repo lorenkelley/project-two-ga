@@ -3,22 +3,24 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background: white;
 }
+/* ------------------------------------ */
+/* HOME */
+a {
+  color:rgb(233, 188, 179);
+  text-decoration: none;
+}
 
 .navbar-brand
     {
       padding-left:70px;
       padding-right:100px;
-      
-      font-size: x-small;
+      font-weight: bold;
+      font-family: 'Raleway', sans-serif;
+      font-size: small;
     }
 .navigation{
- color: #D26856;
+ color: rgb(242, 197, 188);
 }
-a {
-  color: #D26856;
-  text-decoration: none;
-}
-
 #homePage{
   border: none;
   display: grid;
@@ -26,12 +28,14 @@ a {
   grid-template-rows: 1fr 1fr 1fr 1fr;
   margin-top: -50px;
   height: 42rem;
+  box-shadow: 3px 3px 3px 3px rgb(230, 230, 230);
   background-image: url("/images/greenbackground.jpg");
 
   /* image from https://www.pinterest.com/pin/795307615423069170/  */
 
 }
 #homePageTitle{
+  font-family: 'Raleway', sans-serif;
   margin-top: 10%;
   color: white;
   font-size: 22rem;
@@ -68,4 +72,35 @@ a {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
+}
+/* -------------------------------- */
+/* PRODUCT */
+.carousel-item{
+  border: double white;
+  font-family: 'Raleway', sans-serif;
+
+}
+#productsText::first-letter {
+  text-shadow: 2px 2px rgb(227, 227, 227);
+  font-family: 'Raleway', sans-serif;
+  font-size: 100px;
+  color: rgb(255, 255, 255);
+}
+#productsText{
+  text-shadow: 2px 2px rgb(227, 227, 227);
+  font-size: 70px;
+  font-family: 'Raleway', sans-serif;
+  color: white
+}
+
+.card-body{
+ /* border: double white; */
+ font-family: 'Raleway', sans-serif;
+ background-image: url("/images/purple.jpg");
+ /* background-color:  rgba(210, 105, 86, 0.372); */
+}
+.products{
+   border: 15px solid white;
+  background-image: url("/images/greenbackground.jpg");
+   
 }
