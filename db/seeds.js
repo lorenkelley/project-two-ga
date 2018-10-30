@@ -11,7 +11,7 @@ const mongoose = require ('./connections')
 const lipstickOne = new Product({
     name: 'A little tamed',
     brand: 'MAC',
-    image: 'https://www.maccosmetics.com/media/export/cms/products/280x320/mac_sku_S4K001_280x320_0.jpg' ,
+    img: 'https://www.maccosmetics.com/media/export/cms/products/280x320/mac_sku_S4K001_280x320_0.jpg' ,
     type: 'Lipstick',
     price:  18.50
 })
@@ -19,7 +19,7 @@ const lipstickOne = new Product({
 const lipstickTwo = new Product({
     name: 'Burning Love',
     brand: 'MAC',
-    image: 'https://www.maccosmetics.com/media/export/cms/products/280x320/mac_sku_S4K017_280x320_0.jpg' ,
+    img: 'https://www.maccosmetics.com/media/export/cms/products/280x320/mac_sku_S4K017_280x320_0.jpg' ,
     type: 'Lipstick',
     price:  18.50
     
@@ -28,7 +28,7 @@ const lipstickTwo = new Product({
 const lipstickthree = new Product({
     name: 'Devoted To Chili',
     brand: 'MAC',
-    image: 'https://www.maccosmetics.com/media/export/cms/products/280x320/mac_sku_S4K031_280x320_0.jpg' ,
+    img: 'https://www.maccosmetics.com/media/export/cms/products/280x320/mac_sku_S4K031_280x320_0.jpg' ,
     type: 'Lipstick',
     price:  18.50
   
@@ -37,7 +37,7 @@ const lipstickthree = new Product({
 const highlighterOne = new Product({
     name: 'Bright Response',
     brand: 'MAC',
-    image: 'https://www.maccosmetics.com/media/export/cms/products/280x320/mac_sku_S5T38K_280x320_0.jpg' ,
+    img: 'https://www.maccosmetics.com/media/export/cms/products/280x320/mac_sku_S5T38K_280x320_0.jpg' ,
     type: 'Blush + Bronzer',
     price:  24.50
 
@@ -45,7 +45,7 @@ const highlighterOne = new Product({
 const highlighterTwo = new Product({
     name: 'Fever',
     brand: 'MAC',
-    image: 'https://www.maccosmetics.com/media/export/cms/products/280x320/mac_sku_M22039_280x320_0.jpg' ,
+    img: 'https://www.maccosmetics.com/media/export/cms/products/280x320/mac_sku_M22039_280x320_0.jpg' ,
     type: 'Blush + Bronzer',
     price:  24.50
 
@@ -53,7 +53,7 @@ const highlighterTwo = new Product({
 const highlighterThree = new Product({
     name: 'Never Say Never',
     brand: 'MAC',
-    image: 'https://www.maccosmetics.com/media/export/cms/products/280x320/mac_sku_S5T38E_280x320_0.jpg' ,
+    img: 'https://www.maccosmetics.com/media/export/cms/products/280x320/mac_sku_S5T38E_280x320_0.jpg' ,
     type: 'Blush + Bronzer',
     price:  24.50
 
@@ -62,7 +62,7 @@ const highlighterThree = new Product({
 const eyeOne = new Product({
     name: 'Bright Response',
     brand: 'MAC',
-    image: 'https://www.maccosmetics.com/media/export/cms/products/280x320/mac_sku_S5T38K_280x320_0.jpg' ,
+    img: 'https://www.maccosmetics.com/media/export/cms/products/280x320/mac_sku_S5T38K_280x320_0.jpg' ,
     type: 'Blush + Bronzer',
     price:  24.50
 
@@ -70,7 +70,7 @@ const eyeOne = new Product({
 const eyeTwo = new Product({
     name: 'Fever',
     brand: 'MAC',
-    image: 'https://www.maccosmetics.com/media/export/cms/products/280x320/mac_sku_M22039_280x320_0.jpg' ,
+    img: 'https://www.maccosmetics.com/media/export/cms/products/280x320/mac_sku_M22039_280x320_0.jpg' ,
     type: 'Blush + Bronzer',
     price:  24.50
 
@@ -78,7 +78,7 @@ const eyeTwo = new Product({
 const eyeThree = new Product({
     name: 'abc',
     brand: 'MAC',
-    image: 'https://www.maccosmetics.com/media/export/cms/products/280x320/mac_sku_S5T38E_280x320_0.jpg' ,
+    img: 'https://www.maccosmetics.com/media/export/cms/products/280x320/mac_sku_S5T38E_280x320_0.jpg' ,
     type: 'Blush + Bronzer',
     price:  24.50
 

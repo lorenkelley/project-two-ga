@@ -9,18 +9,18 @@ const productController = {
             })
         })
     },
-        // update products
-        update: (req, res) => {
-            Product.findByIdAndUpdate(req.params.id, req.body).then((updatedProduct) => {
-                res.redirect('/${req.params.id}')
-            })
-        },
-        // delete products
-        delete: (req, res) => {
-            Product.findByIdAndRemove(req.params.id).then(() => {
-                res.redirect('/products')
-            })
-        }
+        // // update products
+        // update: (req, res) => {
+        //     Product.findByIdAndUpdate(req.params.id, req.body).then((updatedProduct) => {
+        //         res.redirect('/${req.params.id}')
+        //     })
+        // },
+        // // delete products
+        // delete: (req, res) => {
+        //     Product.findByIdAndRemove(req.params.id).then(() => {
+        //         res.redirect('/products')
+        //     })
+        // }
 
 }
 

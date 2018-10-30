@@ -3,6 +3,10 @@ const User = require('../models/User')
 // create new list
 listController = {
 
+    new: (req, res) => {
+        res.render('list/new')
+    },
+
     create: (req, res) => {
     List.create(req.body).then((newList)=>{
         res.redirect('/${newList._id}')
@@ -19,19 +23,19 @@ listController = {
         })
     },
     show: (req, res) => {
-        List.findById(req.params.id).then((list)=>{
-            res.render('list/show',{
+        List.findById(req.params.id).then((list) => {
+            res.render('list/show', {
                 list:list
             })
         })
     },
     update:(req,res)=>{
-        List.findByIdAndUpdate(req.params.id, req.body).then((updatedList)=>{
+        List.findByIdAndUpdate(req.params.id, req.body).then((updatedList) => {
             res.redirect('/${req.params.id}}')
         })
     },
     delete:(req,res) =>{
-        List.findByIdAndRemove(req.params.id).then(()=>{
+        List.findByIdAndRemove(req.params.id).then(() => {
             res.redirect('/user')
         })
     }
