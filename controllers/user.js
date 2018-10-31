@@ -1,5 +1,5 @@
 // 'boilerplate' for user controller
-ObjectId = require('mongodb').ObjectID;
+ObjectId = require('mongodb').ObjectID
 const User = require('../models/User')
 const List = require('../models/List')
 
@@ -48,9 +48,10 @@ userController = {
     },
     // delete a users account by finding their id and take them back to the home page
     delete: (req, res) => {
-        User.findByIdAndRemove(ObjectId(req.params.id)).then((users) => {
-            res.redirect('/users')
+        User.findByIdAndRemove(ObjectId(req.params.id)).then(() => {
+            res.redirect('/')
         })
     }
 }
+
 module.exports = userController
