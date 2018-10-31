@@ -18,6 +18,7 @@ router.get('/users', userController.index)
 // this is basically the same as the homepage route but the /user is added to corelate to the user controller
 // // create new user
 router.get('/users/new', userController.new)
+        // http verb - router 
 router.post('/users', userController.create)
 // display specfic user profile
 router.get('/users/:userId', userController.show)
@@ -27,6 +28,7 @@ router.get('/users/:userId/edit', userController.edit)
 router.put('/users/:userId', userController.update)
 //  delete one list for specfic user
 router.delete('/users/:userId', userController.delete)
+//   http verb         
 // ---------------------------
 // LIST
 //  create a new list
