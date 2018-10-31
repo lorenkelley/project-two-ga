@@ -1,11 +1,39 @@
-di
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h1>{{title}}</h1>
+
+<div class="col" id="col2">
+      2 of 2
+    </div>
+    </div>
+    
+  </div>
+  <div class="row">
+    <div class="col">
+      1 of 3
+    </div>
+    <div class="col">
+      2 of 3
+    </div>
+    <div class="col">
+      3 of 3
+    </div>
+  </div>
+</div>
 
 
-<h1>{{title}}</h1>
-<p>Hello  {{user.name}}!</p>
+
+
+
+
+
+
+
 <div class="container">
     user profile
-    
+     {{user.name}}!
     
     <div> lip list
 <a href="/users/:userId/list/:listId"><button>list</button> </a>
@@ -20,6 +48,7 @@ di
 
 <a href="users/edit"><button  type="submit" > edit </button></a>
 
-<form action="users{{users._id}}?_method=DELETE" method="DELETE">
+<form action="/users/{{user._id}}?_method=DELETE" method="POST">
 <button type="submit"> DELETE </button>
-</form>
+</form> 
+

@@ -27,7 +27,7 @@ router.get('/users/:userId/edit', userController.edit)
 // // update a list for a specfic user
 router.put('/users/:userId', userController.update)
 //  delete one list for specfic user
-router.get('/users/:id', userController.delete)
+router.delete('/users/:id', userController.delete)
 // router.delete('/users/:userId', userController.delete)        
 // ---------------------------
 // LIST
