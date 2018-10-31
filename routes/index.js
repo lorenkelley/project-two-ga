@@ -27,14 +27,15 @@ router.get('/users/:userId/edit', userController.edit)
 // // update a list for a specfic user
 router.put('/users/:userId', userController.update)
 //  delete one list for specfic user
-router.delete('/users/:userId', userController.delete)
-//   http verb         
+router.get('/users/:id', userController.delete)
+// router.delete('/users/:userId', userController.delete)        
 // ---------------------------
 // LIST
 //  create a new list
-router.post('/users/:userId/list', listController.create)
+// router.post('/users/:userId/list', listController.create)
 // display all lists
 router.get('/users/:userId/list', listController.index)
+router.post('/users/:userId/list/addtask', listController.index)
 //  display one list
 router.get('/users/:userId/list/:listId', listController.show)
 //  update a list for a specfic user
@@ -45,6 +46,8 @@ router.delete('/list/:listId', listController.delete)
 //  PRODUCT
 //  display all products
 router.get('/products', productController.index)
+
+
 // // update a list for a specfic user
 // router.put('/products/:productsId', productController.update)
 // //  delete one list for specfic user

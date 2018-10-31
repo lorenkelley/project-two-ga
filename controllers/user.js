@@ -42,8 +42,8 @@ userController = {
     },
     // update a users account 
     update: (req, res) => {
-        List.findByIdAndUpdate(req.params.id, req.body).then((updatedList) => {
-            res.redirect('/${req.params.id}')
+        User.findByIdAndUpdate(req.params.id, req.body).then((updatedUser) => {
+            res.redirect('/users')
         })
     },
     // delete a users account by finding their id and take them back to the home page
@@ -52,6 +52,22 @@ userController = {
             res.redirect('/')
         })
     }
+    // delete: (req, res) => {
+    //     const usersId = req.params.id
+    //     User.findOneAndRemove(usersId)
+    //     .then((usersId) => {
+    //         res.send('user deleted')
+    //         // res.redirect('/')
+    //     })
+    // }
+    // delete:(req, res) => {
+
+    //     const userIdToDelete = ObjectId(request.params.id)
+    //     User.findByIdAndRemove(userIdToDelete).then(() => {
+    //       console.log(`Successfully deleted user with ID ${userIdToDelete}!`)
+    //       response.redirect('users')
+    //     })
+    //   }
 }
 
 module.exports = userController

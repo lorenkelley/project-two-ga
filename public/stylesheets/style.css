@@ -9,7 +9,7 @@ body {
 /* ------------------------------------ */
 /* HOME */
 a {
-  color:rgb(233, 188, 179);
+  color:#D26856;);
   text-decoration: none;
 }
 
@@ -20,13 +20,16 @@ a {
       font-weight: bold;
       font-family: 'Raleway', sans-serif;
       font-size: small;
+      color: rgb(247, 169, 155);;
+
+      
     }
 .navigation{
-  color: rgb(225, 170, 207);
+  color: rgb(247, 169, 155);;
 }
 
 a {
-  color: rgb(242, 197, 188);
+  color: #D26856;
   text-decoration: none;
 }
 #homePage{
@@ -38,7 +41,6 @@ a {
   height: 42rem;
   box-shadow: 3px 3px 3px 3px rgb(230, 230, 230);
   background-image: url("/images/greenbackground.jpg");
-
   /* image from https://www.pinterest.com/pin/795307615423069170/  */
 
 }
@@ -46,7 +48,7 @@ a {
   font-family: 'Raleway', sans-serif;
   margin-top: 15%;
   color: white;
-  font-size: 20rem;
+  font-size: 21rem;
   font-stretch: narrower;
   animation: fadeInRight 5s; 
 }
@@ -81,22 +83,34 @@ a {
     transform: translate3d(0, 0, 0);
   }
 }
-/* #secondTitle{
+#secondTitle{
   font-family: 'Raleway', sans-serif;
-  margin-left: -60rem;
+  margin-left: 7%;
+  margin-top: 35px;
   color: white;
-  font-size: 10rem;
-} */
+  font-size: 15px;
+}
+.colorwheel{
+  border: double  white;
+  text-align: center;
+  height: 100px;
+  width: 100px;
+  margin-left: -60px;
+  margin-top: 50%;
+  border-radius: 50%;
+  background-color: #D26856;
 
+}
 /* -------------------------------- */
 /* PRODUCT */
 .card-title{
-    text-decoration: underline;
+ 
     font-size: 25px;
+    color: rgba(0, 0, 0, 0.699);
 }
 .carousel-item{
-
-  color: rgb(230, 91, 135);
+  border:solid;
+  color: rgb(0, 0, 0);
   text-align: center;
   font-size: 20px;
   font-weight: bold;
@@ -106,7 +120,7 @@ a {
 .card-body{
  /* border: double white; */
  font-family: 'Raleway', sans-serif;
- border: double white;
+ border: double rgba(0, 0, 0, 0.721);
  /* background-image: url("/images/purple.jpg"); */
 
 }
@@ -130,7 +144,7 @@ a {
 /* GALLERY */
 
 #lightbox{
-  border: double 4px rgb(208, 114, 32) ;
+  border: double 4px rgb(214, 125, 109); ;
   padding: 10px 5px;
   margin-top: 10px;
   margin-left: 12rem;
@@ -138,19 +152,28 @@ a {
 }
 
 #container{
-  color: #35373a;
+  color: #d0d0d0;
   min-height: 100vh;
   padding: 30px 50px;
   
 }
 #lightbox1{
   margin-left: 12rem;
-  border: double 4px rgb(208, 114, 32) ;
+  border: double 4px rgb(219, 137, 123); ;
   padding: 10px 5px;
 }
 #lightbox2{
   margin-left: 8rem;
-  border: double 4px rgb(208, 114, 32) ;
+  border: double 4px rgb(226, 137, 122); ;
   padding: 10px 5px;
   margin-top: 10px;
+}
+/* SIGN IN  */
+#signIn{
+  border: solid white 20px;
+  background-repeat: fill;
+}
+.form-group{
+  color: white;
+  bor
 }

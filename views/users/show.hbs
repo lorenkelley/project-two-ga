@@ -1,3 +1,6 @@
+di
+
+
 <h1>{{title}}</h1>
 <p>Hello  {{user.name}}!</p>
 <div class="container">
@@ -17,6 +20,6 @@
 
 <a href="users/edit"><button  type="submit" > edit </button></a>
 
-<form action="/users/{{users._id}}?_method=DELETE" method="">
+<form action="users{{users._id}}?_method=DELETE" method="DELETE">
 <button type="submit"> DELETE </button>
 </form>
