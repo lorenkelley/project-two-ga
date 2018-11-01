@@ -35,7 +35,7 @@ router.delete('/users/:id', userController.delete)
 // router.post('/users/:userId/list', listController.create)
 // display all lists
 router.get('/users/:userId/list', listController.index)
-router.post('/users/:userId/list/addtask', listController.index)
+router.post('/users/:userId/list/add', listController.index)
 //  display one list
 router.get('/users/:userId/list/:listId', listController.show)
 //  update a list for a specfic user
