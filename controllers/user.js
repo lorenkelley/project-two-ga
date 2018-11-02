@@ -42,8 +42,8 @@ userController = {
     },
     // update a users account 
     update: (req, res) => {
-        User.findByIdAndUpdate(req.params.userId, req.body).then((updatedUser) => {
-            res.redirect(`/users/${updatedUser.id}`)
+        User.findByIdAndUpdate(req.params.id, req.body).then((updatedUser) => {
+            res.redirect(`/users`)
         })
     },
     // delete a users account by finding their id and take them back to the home page
