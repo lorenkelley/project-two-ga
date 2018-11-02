@@ -29,7 +29,7 @@ https://www.figma.com/file/SceLPQlMh5r2uQqxPFHOZVBj/Project-Two?node-id=0%3A1
 https://trello.com/b/pvsDbLVE/project-two
 
 ## Deployed Application
-## Check Out My Deployed Application Via Heroku Here:
+### Check Out My Deployed Application Via Heroku Here:
 https://dashboard.heroku.com/apps/vast-eyrie-84147
 
 ## Version 2.0
