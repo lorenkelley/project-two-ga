@@ -3,7 +3,7 @@
 Build a full-stack server application with  Node/Express App with Mongo/Mongoose from the ground up!
 
 # Color-Match
-Color Match is a makeup application that was designed to help women find makeup products based on their specific skintone id! The vision behind Color-Match is to take the hassle out of finding make-up products that actually work for your skintone. In Version 1.0. it allows users to sign-up and create a profile, with their profile users are able to update and delete their accounts as well as view potential products and view their lists that are specific to each individual user. 
+Color-Match is a makeup application that was designed to help women find makeup products based on their specific skintone id! The vision behind Color-Match is to take the hassle out of finding make-up products that actually work for your skintone. In Version 1.0. it allows users to sign-up and create a profile, with their profile users are able to update and delete their accounts as well as view potential products and view their lists that are specific to each individual user. 
 
 ## Technologies (Libraries and Frameworks)
 1. Bootstrap
@@ -20,7 +20,6 @@ https://www.figma.com/file/SceLPQlMh5r2uQqxPFHOZVBj/Project-Two?node-id=0%3A1
 
  ![alt text](/public/images/one.png)
  ![alt text](/public/images/two.png)
- ![alt text](/public/images/three.png)
  ![alt text](/public/images/four.png)
 
 
