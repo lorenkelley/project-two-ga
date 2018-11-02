@@ -21,11 +21,11 @@ router.get('/users/new', userController.new)
 // http verb - router 
 router.post('/users', userController.create)
 // display specfic user profile
-router.get('/users/:userId', userController.show)
+router.get('/users/:id', userController.show)
 // edit user this is where update lives
-router.get('/users/:userId/edit', userController.edit)
+router.get('/users/:id/edit', userController.edit)
 // // update a list for a specfic user
-router.put('/users/:userId', userController.update)
+router.put('/users/:id', userController.update)
 //  delete one list for specfic user
 router.delete('/users/:id', userController.delete)
 // router.delete('/users/:userId', userController.delete)        

@@ -26,7 +26,7 @@ userController = {
     },
     // find the users by id and dispaly that user
     show: (req, res) => {
-        const userId = req.params.userId
+        const userId = req.params.id
         User.findById(userId).populate('user')
             .then((user) => {
                 console.log(user)
@@ -36,14 +36,17 @@ userController = {
             })
     },
     edit: (req, res) => {
-        User.findById(req.params.id).then((users) => {
-            res.render('users/edit')
+        console.log("This users id ", req.params.id)
+        User.findById(req.params.id).then((user) => {
+            res.render('users/edit',{
+                user: user
+            })
         })
     },
     // update a users account 
     update: (req, res) => {
         User.findByIdAndUpdate(req.params.id, req.body).then((updatedUser) => {
-            res.redirect(`/users`)
+            res.redirect(`/users/${updatedUser.id}`)
         })
     },
     // delete a users account by finding their id and take them back to the home page
