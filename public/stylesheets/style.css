@@ -1,42 +1,50 @@
-*{
+* {
   text-decoration: none;
 }
+
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background: white;
 }
+
 /* ------------------------------------ */
 /* HOME */
 a {
-  color:#D26856;
+  color: #D26856;
   text-decoration: none;
 }
 
-.navbar-brand
-    { text-decoration: none;
-      padding-left:50px;
-      padding-right:100px;
-      font-weight: bold;
-      font-family: 'Raleway', sans-serif;
-      font-size: small;
-      color: rgb(247, 169, 155);;
+.navbar-brand {
+  text-decoration: none;
+  padding-left: 50px;
+  padding-right: 100px;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+  font-size: small;
+  color: rgb(247, 169, 155);
+  ;
 
-      
-    }
-.navigation{
-  color: rgb(247, 169, 155);;
+
+}
+
+.navigation {
+  color: rgb(247, 169, 155);
+  ;
 }
 
 a {
-  color: rgb(247, 169, 155);;
+  color: rgb(247, 169, 155);
+  ;
   text-decoration: none;
 }
+
 .navbar-brand:hover {
-   color: rgb(247, 169, 155);
+  color: rgb(247, 169, 155);
   text-decoration: none;
 }
-#homePage{
+
+#homePage {
   border: none;
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
@@ -48,14 +56,16 @@ a {
   /* image from https://www.pinterest.com/pin/795307615423069170/  */
 
 }
-#homePageTitle{
+
+#homePageTitle {
   font-family: 'Raleway', sans-serif;
   margin-top: 15%;
   color: white;
   font-size: 14rem;
   font-stretch: narrower;
-  animation: fadeInRight 5s; 
+  animation: fadeInRight 5s;
 }
+
 /* Allows title to fade in */
 /* https://daneden.github.io/animate.css/ */
 @keyframes fadeInRight {
@@ -71,31 +81,36 @@ a {
     transform: translate3d(0, 0, 0);
   }
 }
+
 .fadeInRight {
   -webkit-animation-name: fadeInRight;
   animation-name: fadeInRight;
 }
+
 @-webkit-keyframes fadeInRightBig {
   from {
     opacity: 0;
     -webkit-transform: translate3d(2000px, 0, 0);
     transform: translate3d(2000px, 0, 0);
   }
+
   to {
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
 }
-#secondTitle{
+
+#secondTitle {
   font-family: 'Raleway', sans-serif;
   margin-left: 7%;
   margin-top: 35px;
   color: white;
   font-size: 15px;
 }
-.colorwheel{
-  border: double  white;
+
+.colorwheel {
+  border: double white;
   text-align: center;
   height: 100px;
   width: 100px;
@@ -105,14 +120,16 @@ a {
   background-color: #D26856;
 
 }
+
 /* -------------------------------- */
 /* PRODUCT */
-.card-title{
- 
-    font-size: 25px;
-    color: rgba(0, 0, 0, 0.699);
+.card-title {
+
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.699);
 }
-.carousel-item{
+
+.carousel-item {
   border: 75px solid rgba(240, 240, 240, 0.521);
   color: rgb(0, 0, 0);
   text-align: center;
@@ -121,82 +138,98 @@ a {
   font-family: 'Raleway', sans-serif;
 
 }
-.card-body{
- /* border: double white; */
- font-family: 'Raleway', sans-serif;
- border: double rgba(0, 0, 0, 0.721);
+
+.card-body {
+  /* border: double white; */
+  font-family: 'Raleway', sans-serif;
+  border: double rgba(0, 0, 0, 0.721);
 }
-.products{
-  
- 
+
+.products {
+
+
   background-image: url("/images/greenbackground.jpg");
-   
+
 }
+
 #productsText::first-letter {
   /* text-shadow: 2px 2px rgb(227, 227, 227); */
   font-family: 'Raleway', sans-serif;
   font-size: 80px;
   color: rgb(255, 255, 255);
 }
-#productsText{
+
+#productsText {
   font-size: 70px;
   font-family: 'Raleway', sans-serif;
   color: white
 }
+
 /* GALLERY */
 
-#lightbox{
-  border: double 4px rgb(214, 125, 109); ;
+#lightbox {
+  border: double 4px rgb(214, 125, 109);
+  ;
   padding: 10px 5px;
   margin-top: 10px;
   margin-left: 12rem;
-  
+
 }
 
-#container{
+#container {
   color: #d0d0d0;
   min-height: 100vh;
   padding: 30px 50px;
-  
+
 }
-#lightbox1{
+
+#lightbox1 {
   margin-left: 10rem;
-  border: double 4px rgb(219, 137, 123); ;
+  border: double 4px rgb(219, 137, 123);
+  ;
   padding: 10px 5px;
 }
-#lightbox2{
+
+#lightbox2 {
   margin-left: 15rem;
-  border: double 4px rgb(226, 137, 122); ;
+  border: double 4px rgb(226, 137, 122);
+  ;
   padding: 10px 5px;
   margin-top: 10px;
 }
+
 /* SIGN IN USERS */
-#bodySign{
+#bodySign {
   background-image: url("/images/greenbackground.jpg");
 }
-#signIn{
 
-  border: double rgb(16, 15, 15); ;
+#signIn {
+
+  border: double rgb(16, 15, 15);
+  ;
   background-color: white;
- margin-left: 400px;
- margin-top: 100px;
+  margin-left: 400px;
+  margin-top: 100px;
   background-repeat: no-repeat;
   width: 500px;
   height: 300px;
-  box-shadow: whitesmoke 1px 1px ;
+  box-shadow: whitesmoke 1px 1px;
 }
-.form-group{
+
+.form-group {
   font-family: 'Raleway', sans-serif;
   margin-top: 30px;
   text-align: center;
   color: rgb(0, 0, 0)
 }
-#buttonSub{
+
+#buttonSub {
   border: double;
   margin-left: 27%;
   width: 200px;
 }
-#bannertext{
+
+#bannertext {
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
   text-align: center;
@@ -207,96 +240,113 @@ a {
   color: white;
   background-color: rgba(210, 105, 86, 0.795);
 }
-#bannertext p{
+
+#bannertext p {
   margin-top: 50px;
 }
-.text-center{
+
+.text-center {
   text-align: center;
   font-family: 'Raleway', sans-serif;
   color: rgb(2, 2, 2);
   /* margin-left: -60%; */
-  
+
 }
+
 /* USER Profile */
-.container{
+.container {
   border: solid whitesmoke;
 }
-.col{
+
+.col {
   border: none;
   height: 500px;
   width: 300px;
-  box-shadow: 5px 5px 5px 5px whitesmoke; 
+  box-shadow: 5px 5px 5px 5px whitesmoke;
 }
-#col1{
-  box-shadow: 5px 5px 5px 5px whitesmoke; 
+
+#col1 {
+  box-shadow: 5px 5px 5px 5px whitesmoke;
 }
-#col2{
-  margin-top:40px;
+
+#col2 {
+  margin-top: 40px;
   margin-left: -15px;
   width: 600px;
   height: 400px;
   background-color: rgba(233, 78, 51, 0.523);
 }
-#userProfileName{
+
+#userProfileName {
   font-family: 'Raleway', sans-serif;
   font-size: 50px;
   margin-top: 50px;
   color: white;
 }
-.colormatch{
+
+.colormatch {
   background-color: rgb(113, 61, 5);
   margin-top: 50px;
   border: none;
   height: 200px;
   width: 200px;
- 
+
 }
-#colorMatch{
+
+#colorMatch {
   font-family: 'Raleway', sans-serif;
   margin-left: 230px;
   margin-top: -150px;
   color: white;
 }
-#userProfileP{
+
+#userProfileP {
   font-family: 'Raleway', sans-serif;
-margin-left: 230px;
-font-size: 30px;
-color: white;
+  margin-left: 230px;
+  font-size: 30px;
+  color: white;
 }
-#col3{
+
+#col3 {
   background-image: url("/images/greenbackground.jpg");
 
-  box-shadow: 5px 5px 5px 5px whitesmoke; 
+  box-shadow: 5px 5px 5px 5px whitesmoke;
 }
-#lips{
+
+#lips {
   margin-top: 50%;
   margin-left: 20%;
-  width:200px;
+  width: 200px;
 }
-#col4{
+
+#col4 {
   background-image: url("/images/greenbackground.jpg");
 
-  box-shadow: 5px 5px 5px 5px whitesmoke; 
+  box-shadow: 5px 5px 5px 5px whitesmoke;
 }
-#col5{
+
+#col5 {
   background-image: url("/images/greenbackground.jpg");
- 
-  box-shadow: 5px 5px 5px 5px whitesmoke; 
+
+  box-shadow: 5px 5px 5px 5px whitesmoke;
 }
-#delete{
+
+#delete {
   margin-top: 30px;
   margin-left: -1.5%;
   font-size: 20px;
   border: double rgb(0, 0, 0);
   background: white;
 }
-#update{
+
+#update {
   margin-top: -50%;
   margin-left: 15%;
   font-size: 20px;
   border: double rgb(0, 0, 0);
   background: white;
 }
-.container{
+
+.container {
   background-color: rgba(255, 251, 250, 0.753);
 }

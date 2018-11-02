@@ -1,16 +1,16 @@
 <h1>lip list</h1>
 
 <form action="/add" method="POST">
-<input type="text" name="newtask" placeholder="new task">
-<button> ADD </button>
+  <input type="text" name="newtask" placeholder="new task">
+  <button> ADD </button>
 
-<button formaction="/remove" type="submit"> REMOVE</button>
+  <button formaction="/remove" type="submit"> REMOVE</button>
 </form>
 
 <h2>ORDERD</h2>
 
 
 {{#each users.list}}
-  <h1>{{name}}</h1>
-  
+<h1>{{name}}</h1>
+
 {{/each}}
