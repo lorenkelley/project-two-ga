@@ -6,8 +6,13 @@ Build a full-stack server application with  Node/Express App with Mongo/Mongoose
 Color Match is a makeup application that was designed to help women find makeup products based on their specific skintone id! The vision behind Color-Match is to take the hassle out of finding make-up products that actually work for your skintone. In Version 1.0. it allows users to sign-up and create a profile, with their profile users are able to update and delete their accounts as well as view potential products and view their lists that are specific to each individual user. 
 
 ## Technologies (Libraries and Frameworks)
-Bootstrap
-Google Fonts
+1. Bootstrap
+2. Google Fonts
+3. Node.js
+4. Express
+5. MongoDB
+6. Mongoose
+7. Heroku
 
 ## Wireframe
 ### Check Out My Wireframe Here:
@@ -32,6 +37,6 @@ https://dashboard.heroku.com/apps/vast-eyrie-84147
 In version 2.0 Color-Match will be able to generate products based on a users specific skintone id that they enter when they sign up. Users will also be able to pull in products to their list and interact with other users through a forum.
 
 ## Resources
-https://www.pinterest.com/kelleyloren52/project-two/
-<br>
-https://medium.com/@atingenkay/restful-routes-what-are-they-8fe221521bb
+1. https://www.pinterest.com/kelleyloren52/project-two/
+
+2. https://medium.com/@atingenkay/restful-routes-what-are-they-8fe221521bb
