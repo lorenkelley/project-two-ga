@@ -10,22 +10,28 @@ Bootstrap
 Google Fonts
 
 ## Wireframe
-for images : ![alt text](/public/images/one.png)
-for images : ![alt text](/public/images/two.png)
-for images : ![alt text](/public/images/three.png)
-for images : ![alt text](/public/images/four.png)
-
 ### Check Out My Wireframe Here:
 https://www.figma.com/file/SceLPQlMh5r2uQqxPFHOZVBj/Project-Two?node-id=0%3A1
+
+ ![alt text](/public/images/one.png)
+ ![alt text](/public/images/two.png)
+ ![alt text](/public/images/three.png)
+ ![alt text](/public/images/four.png)
+
+
 
 ## Trello Board
 ### Check Out My Project Trello Board Here:
 https://trello.com/b/pvsDbLVE/project-two
 
+## Deployed Application
+## Check Out My Deployed Application Via Heroku Here:
+https://dashboard.heroku.com/apps/vast-eyrie-84147
 
 ## Version 2.0
 In version 2.0 Color-Match will be able to generate products based on a users specific skintone id that they enter when they sign up. Users will also be able to pull in products to their list and interact with other users through a forum.
 
 ## Resources
 https://www.pinterest.com/kelleyloren52/project-two/
+<br>
 https://medium.com/@atingenkay/restful-routes-what-are-they-8fe221521bb
