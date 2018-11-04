@@ -18,9 +18,9 @@ Color-Match is a makeup application that was designed to help women find makeup 
 ### Check Out My Wireframe Here:
 https://www.figma.com/file/SceLPQlMh5r2uQqxPFHOZVBj/Project-Two?node-id=0%3A1
 
- ![alt text](/public/images/one.png)
- ![alt text](/public/images/two.png)
- ![alt text](/public/images/four.png)
+ ![alt text](/public/images/1.png)
+ ![alt text](/public/images/2.png)
+ ![alt text](/public/images/3.png)
 
 
 
