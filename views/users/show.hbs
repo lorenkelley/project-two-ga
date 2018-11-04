@@ -31,9 +31,7 @@
   <form action="/users/{{user._id}}?_method=DELETE" method="post">
     <button type="submit" id="delete"> delete profile </button>
   </form>
-  <form action="/users{{users._id}}?_method=PATCH" method="">
-    <button type="submit" id="update"> UPDATE </button>
-  </form>
+  
 </div>
 
 
@@ -42,8 +40,7 @@
 
 
 
-<a href="/users/{{users._id}}/edit"><button type="submit"> edit </button></a>
-
+<a  id="update" href="/users/{{user._id}}/edit"><button type="submit"> edit </button></a>
 </div>
 
 

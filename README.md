@@ -30,7 +30,7 @@ https://trello.com/b/pvsDbLVE/project-two
 
 ## Deployed Application
 ### Check Out My Deployed Application Via Heroku Here:
-https://dashboard.heroku.com/apps/vast-eyrie-84147
+https://vast-eyrie-84147.herokuapp.com/
 
 ## Version 2.0
 In version 2.0 Color-Match will be able to generate products based on a users specific skintone id that they enter when they sign up. Users will also be able to pull in products to their list and interact with other users through a forum.
